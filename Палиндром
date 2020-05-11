@@ -1,3 +1,8 @@
-def palindrome(data):
-    data = data.replace(' ','').lower()
-    return 'Палиндром' if data == data[::-1] else 'Не палиндром'
+x = input()
+y = len(x)
+
+for i in range(y//2):
+    if x[i] != x[-1-i]:
+        print("Не палиндром")
+        quit()
+print("Палиндром")
